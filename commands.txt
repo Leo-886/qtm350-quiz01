@@ -1,0 +1,35 @@
+(base) leoxu@xuyifandeMacBook-Air ~ % git clone https://github.com/Leo-886/qtm350-quiz01.git
+
+(base) leoxu@xuyifandeMacBook-Air ~ % pwd
+/Users/leoxu
+(base) leoxu@xuyifandeMacBook-Air ~ % cd qtm350-quiz01
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % touch commands.txt 
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % git checkout -b feature-update
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % mkdir reports
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % touch reports/summary.md
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % echo "This document provides a summary of the project updates." > summary.md
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % git add . && git commit -m "Add reports directory"
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % touch reports/{file1.txt,file2.txt,fil3.txt}      
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % echo "This document provides a summary of the project updates." > reports/summary.md
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % mv data/raw-data.csv data/input-data.csv
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % mkdir scripts/backup && cp scripts/*.py scripts/backup/
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % rm docs/documentation.md
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % git add . && git commit -m "Update project files"
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % pwd
+/Users/leoxu/qtm350-quiz01
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % touch .gitignore
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % echo -e "temp/\ndataset0?.csv" > .gitignore 
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % cat .gitignore
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % git add . && git commit -m "Add .gitignore file" 
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % git checkout main
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % git merge feature-update
+
+(base) leoxu@xuyifandeMacBook-Air qtm350-quiz01 % rm summary.md  # fix the error made in q8
